@@ -315,40 +315,6 @@ header {
   height: auto;
 }
 
-.events {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 2rem 1.5rem;
-}
-
-.event {
-  display: flex;
-  gap: 1rem;
-  padding: 1rem;
-  margin-bottom: 1rem;
-
-  border: 1px solid rgba(7, 17, 75, 0.25);
-  background: rgba(255, 255, 255, 0.12);
-
-  color: inherit;
-  text-decoration: none;
-}
-
-.event img {
-  width: 180px;
-  height: auto;
-  display: block;
-}
-
-.event h3 {
-  margin: 0 0 0.25rem 0;
-  font-size: 1rem;
-}
-
-.event p {
-  margin: 0;
-}
-
 
 
 
