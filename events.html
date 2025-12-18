@@ -8,34 +8,111 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
- <!-- =========================
-       HEADER / NAVIGATION
-       ========================= -->
+ <header class="site-header">
+    <nav class="primary-nav" aria-label="Primary Navigation">
+      <ul class="nav-list">
 
-   <header class="site-header">
-    <nav class="primary-nav" aria-label="Primary Navigation">
-      <ul class="nav-list">
+        <li><a href="what.html">WHAT</a></li>
+        <li><a href="how.html">HOW</a></li>
 
-        <li><a href="what.html">WHAT</a></li>
-        <li><a href="how.html">HOW</a></li>
+        <li class="wp-inter-logo">
+          <a href="index.html">
+            <img
+              src="Intermix Logo_trasp.png"
+              alt="Intermix logo"
+              width="100"
+              height="100">
+          </a>
+        </li>
 
-        <li class="wp-inter-logo">
-          <a href="index.html">
-            <img
-              src="Intermix Logo_trasp.png"
-              alt="Intermix logo"
-              width="100"
-              height="100">
-          </a>
-        </li>
+        <li><a href="when.html">WHEN</a></li>
+        <li><a href="why.html">WHY</a></li>
+        <li><a href="connect.html">CONNECT</a></li>
 
-        <li><a href="when.html">WHEN</a></li>
-        <li><a href="why.html">WHY</a></li>
-        <li><a href="connect.html">CONNECT</a></li>
+      </ul>
+    </nav>
+  </header>
 
-      </ul>
-    </nav>
-  </header>
+<style>
+/* =========================
+   WHEN PAGE BASE
+   ========================= */
+
+.when-page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+}
+
+/* =========================
+   TWO-COLUMN LAYOUT
+   ========================= */
+
+.when-block {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  margin-top: 2.5rem;
+}
+
+/* LEFT TEXT COLUMN */
+.when-text {
+  flex: 1;
+}
+
+.when-term {
+  font-family: monospace;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.when-text p {
+  line-height: 1.6;
+  margin-bottom: 1.25rem;
+}
+
+/* RIGHT VISUAL PLACEHOLDER */
+.when-visual {
+  flex: 0 0 200px;
+  height: 200px;
+}
+</style>
+
+<main class="when-page">
+
+  <h1>WHEN?</h1>
+
+  <section>
+
+    <!-- LEFT: Text -->
+    <div class="when-text">
+      <p>
+        <strong class="when-term">WHEN</strong> are the <strong>Intermix</strong> meetings?
+        The first three meetings, Intermix will meet virtually for 90-minute sessions on
+        <a href="https://github.com/bigbluebutton/bigbluebutton">Big Blue Button</a>
+        (courtesy of <a href="https://join.social.coop/home.html">social.coop</a>).
+      </p>
+
+    </div>
+
+      <p>
+        It’s easy to see <a href="when.html" class="what-term">WHEN</a> events are scheduled for
+        <strong>Intermix</strong>. Interested participants can register via
+        <!-- <a href="#">Meetup</a> and --> <a href="https://luma.com/calendar/cal-7kVn7XXIBocTwRk">Lumia</a>, or follow
+        <a href="social-media.html">Intermix Socials</a> for updates.
+      </p>
+    </div>
+
+    <!-- RIGHT: Visual placeholder 
+    <div class="when-visual">
+      future globe / world icon -->
+    </div>
+
+  </section>
+
+
+
 
 <div class="intermix-events-page">
 
@@ -56,14 +133,15 @@
   </a>
 
   <a class="event" href="session02-mastodon.html">
-    <img src="intermix-LG-S2.png" alt="Event flyer for ‘What Is Mastodon?’">
+    <img src="Intermix-LG-Session2.png" alt="Event flyer titled “What Is Mastodon?” for a virtual session on February 21st, 12:00–1:15 PM PST, with Mastodon logo and elephant icons.">
     <div>
       <h3>What Is Mastodon?</h3>
       <p>February 21 · 12:00–1:15 PM PST</p>
     </div>
   </a>
-
 </section>
+</main>
+
 
 
 
