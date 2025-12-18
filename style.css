@@ -13,12 +13,18 @@ Version: 0.1
 
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Red+Rose:wght@498&display=swap');
 
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+}
+
+
    body {
 
   background-color: #ff9bdf;
   color: #07114b;
-  display: flex;
-  justify-content: center;
+  display: block;
 }
 
 footer {
@@ -308,4 +314,5 @@ header {
   width: 100%;
   height: auto;
 }
+
 
