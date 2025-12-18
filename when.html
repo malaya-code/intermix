@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Intermix — When</title>
-  <link rel="stylesheet" href=style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 
  <header class="site-header">
@@ -90,56 +90,13 @@
         (courtesy of <a href="https://join.social.coop/home.html">social.coop</a>).
       </p>
 
-      <!-- EVENTS AGGREGATION -->
-    <div class="when-events">
-
-      <?php
-      $events_query = new WP_Query( array(
-        'post_type'      => 'post',
-        'posts_per_page' => 5,
-        'orderby'        => 'date',
-        'order'          => 'ASC'
-      ) );
-
-      if ( $events_query->have_posts() ) :
-        while ( $events_query->have_posts() ) :
-          $events_query->the_post();
-      ?>
-
-          <article class="when-event-item">
-            <h3>
-              <a href="<?php the_permalink(); ?>">
-                <?php the_title(); ?>
-              </a>
-            </h3>
-
-            <?php if ( has_post_thumbnail() ) : ?>
-              <div class="when-event-thumb">
-                <?php the_post_thumbnail( 'medium' ); ?>
-              </div>
-            <?php endif; ?>
-
-            <p><?php the_excerpt(); ?></p>
-          </article>
-
-      <?php
-        endwhile;
-        wp_reset_postdata();
-      else :
-      ?>
-
-        <p>BLANK.</p>
-
-      <?php endif; ?>
-
     </div>
-    <!-- END EVENTS AGGREGATION -->
 
       <p>
-        It’s easy to see <a href="/when.html" class="what-term">WHEN</a> events are scheduled for
+        It’s easy to see <a href="when.html" class="what-term">WHEN</a> events are scheduled for
         <strong>Intermix</strong>. Interested participants can register via
         <!-- <a href="#">Meetup</a> and --> <a href="https://luma.com/calendar/cal-7kVn7XXIBocTwRk">Lumia</a>, or follow
-        <a href="/social-media.html">Intermix Socials</a> for updates.
+        <a href="social-media.html">Intermix Socials</a> for updates.
       </p>
     </div>
 
@@ -151,4 +108,5 @@
   </section>
 
 </main>
+
 
