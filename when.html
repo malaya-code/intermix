@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Intermix — What</title>
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<header class="site-header">
+  <nav class="primary-nav" aria-label="Primary Navigation">
+    <ul class="nav-list">
+
+      <li><a href="what.html">WHAT</a></li>
+      <li><a href="how.html">HOW</a></li>
+
+      <li class="nav-logo">
+        <a href="index.html">
+          <img
+            src="assets/img/inter-logo.svg"
+            alt="Intermix logo"
+            width="100"
+            height="100">
+        </a>
+      </li>
+
+      <li><a href="when.html">WHEN</a></li>
+      <li><a href="why.html">WHY</a></li>
+      <li><a href="connect.html">CONNECT</a></li>
+
+    </ul>
+  </nav>
+</header>
+
+<style>
+/* =========================
+   WHEN PAGE BASE
+   ========================= */
+
+.when-page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+}
+
+/* =========================
+   TWO-COLUMN LAYOUT
+   ========================= */
+
+.when-block {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  margin-top: 2.5rem;
+}
+
+/* LEFT TEXT COLUMN */
+.when-text {
+  flex: 1;
+}
+
+.when-term {
+  font-family: monospace;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.when-text p {
+  line-height: 1.6;
+  margin-bottom: 1.25rem;
+}
+
+/* RIGHT VISUAL PLACEHOLDER */
+.when-visual {
+  flex: 0 0 200px;
+  height: 200px;
+}
+</style>
+
+<main class="when-page">
+
+  <h1>WHEN?</h1>
+
+  <section class="when-block">
+
+    <!-- LEFT: Text -->
+    <div class="when-text">
+      <p>
+        <strong class="when-term">WHEN</strong> are the <strong>Intermix</strong> meetings?
+        The first three meetings, Intermix will meet virtually for 90-minute sessions on
+        <a href="https://github.com/bigbluebutton/bigbluebutton">Big Blue Button</a>
+        (courtesy of <a href="https://join.social.coop/home.html">social.coop</a>).
+      </p>
+
+      <!-- EVENTS AGGREGATION -->
+    <div class="when-events">
+
+      <?php
+      $events_query = new WP_Query( array(
+        'post_type'      => 'post',
+        'posts_per_page' => 5,
+        'orderby'        => 'date',
+        'order'          => 'ASC'
+      ) );
+
+      if ( $events_query->have_posts() ) :
+        while ( $events_query->have_posts() ) :
+          $events_query->the_post();
+      ?>
+
+          <article class="when-event-item">
+            <h3>
+              <a href="<?php the_permalink(); ?>">
+                <?php the_title(); ?>
+              </a>
+            </h3>
+
+            <?php if ( has_post_thumbnail() ) : ?>
+              <div class="when-event-thumb">
+                <?php the_post_thumbnail( 'medium' ); ?>
+              </div>
+            <?php endif; ?>
+
+            <p><?php the_excerpt(); ?></p>
+          </article>
+
+      <?php
+        endwhile;
+        wp_reset_postdata();
+      else :
+      ?>
+
+        <p>BLANK.</p>
+
+      <?php endif; ?>
+
+    </div>
+    <!-- END EVENTS AGGREGATION -->
+
+      <p>
+        It’s easy to see <a href="/when" class="what-term">WHEN</a> events are scheduled for
+        <strong>Intermix</strong>. Interested participants can register via
+        <a href="#">Meetup</a> and <a href="#">Lumia</a>, or follow
+        <a href="/social-media">Intermix Socials</a> for updates.
+      </p>
+    </div>
+
+    <!-- RIGHT: Visual placeholder -->
+    <div class="when-visual">
+      <!-- future globe / world icon -->
+    </div>
+
+  </section>
+
+</main>

@@ -1,0 +1,308 @@
+/*
+Theme Name: Intermix
+Theme URI: http://intermix-social.com
+Author: Malaya Wright
+Description: Open-media discussion site for Intermix.
+Version: 0.1
+*/
+
+
+/* =========================
+   MAIN THEME
+   ========================= */
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Red+Rose:wght@498&display=swap');
+
+   body {
+
+  background-color: #ff9bdf;
+  color: #07114b;
+}
+
+footer {
+    background-color: #07114b;
+}
+a {
+  color: #07114b;          /* navy text color */
+  /* text-decoration: underline; */
+}
+
+a:hover,
+a:focus {
+  color: #810064;
+  text-decoration: none;
+}
+
+a:active {
+  color: #460035;
+}
+
+/* =========================
+   FONTS
+  ========================= */
+
+body {
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+@font-face {
+  font-family: 'Good Times';
+  src: url('fonts/good-times/good-times.otf') format('opentype');
+  font-display: swap;
+}
+
+
+h1, h2, h3 {
+  font-family: 'Good Times', sans-serif;
+  letter-spacing: 0.12em;
+}
+
+/*h2 {
+
+    display:inline;
+    background-color: #883070;
+
+} */
+
+.logo,
+.what-term
+.special,
+.hero {
+  font-family: 'League Spartan', sans-serif;
+  font-weight: 900;
+}
+
+
+ WHAT page – minimal, editorial */
+
+.what-page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+}
+
+.what-content {
+  max-width: 720px;
+  margin-left: auto; /* pushes content right */
+  line-height: 1.6;
+}
+
+/* On multiple pages */
+.what-term {
+  font-family: monospace;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 1.5rem;
+}
+
+.what-content p {
+  margin-bottom: 1.25rem;
+}
+
+
+/* =========================
+   CONNECT PAGE BASE
+   ========================= */
+
+.connect-page {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+/* =========================
+   INTRO SECTION
+   ========================= */
+
+.connect-intro {
+  margin-bottom: 3rem;
+}
+
+.connect-intro h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.connect-intro p {
+  max-width: 700px;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+
+/* =========================
+   LINKS (NEUTRAL BASE)
+   ========================= */
+
+.connect-page a {
+  text-decoration: underline;
+}
+
+.connect-page a:hover {
+  text-decoration: none;
+}
+
+/* =========================
+   HEADER BASE
+   ========================= */
+
+.site-header {
+  width: 100%;
+  /* border-bottom: 1px solid rgba(0,0,0,0.15);  subtle bar */
+  display: flex;
+  height: 10rem;
+
+}
+
+header {
+    /* background-color: #ffbfe9; */
+
+}
+
+.primary-nav {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+  display: flex;
+}
+/* =========================
+   NAV LIST (GRID, 6 ITEMS SAFE)
+   ========================= */
+
+/* NAV CONTAINER */
+.site-header .primary-nav .nav-list {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  justify-content: center;
+  align-items: center;
+  column-gap: 2rem;
+
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+/* NAV ITEMS */
+.site-header .primary-nav .nav-list > li {
+  display: flex;
+  align-items: center;
+}
+
+/* CENTER LOGO (STAR) */
+.site-header .primary-nav .wp-inter-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  max-width: 120px;
+  max-height: 120px;
+}
+
+/* SVG IMAGE */
+.site-header .primary-nav .wp-inter-logo img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* REMOVE BULLETS */
+.site-header .primary-nav .nav-list li::marker,
+.site-header .primary-nav .nav-list li::before,
+.site-header .primary-nav .nav-list li::after {
+  content: none;
+}
+
+/* LINKS */
+.nav-list a {
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+}
+
+/* =========================
+   LINKS
+   ========================= */
+
+.nav-list a {
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+}
+
+/* =========================
+   LOGO
+   ========================= */
+
+.nav-logo a {
+  font-size: 1.2rem;
+
+}
+
+/* =========================
+   WHAT PAGE — TWO-COLUMN LAYOUT
+   ========================= */
+
+.what-page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+}
+
+.what-layout {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  column-gap: 3rem;
+  align-items: center; /* vertical centering of WHAT? */
+}
+
+.what-title {
+  margin: 0;
+}
+
+.what-content {
+  max-width: 720px;
+  line-height: 1.6;
+}
+
+.what-content p {
+  margin-bottom: 1.25rem;
+}
+
+/* =========================
+   WHEN — EVENTS LIST
+   ========================= */
+
+.when-events {
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.when-event-item {
+  padding: 1rem 1.25rem;
+  border: 1px solid rgba(7, 17, 75, 0.25);
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.when-event-item h3 {
+  margin: 0 0 0.75rem 0;
+  font-size: 1rem;
+}
+
+.when-event-item h3 a {
+  text-decoration: underline;
+}
+
+.when-event-thumb {
+  margin: 0.75rem 0;
+}
+
+.when-event-thumb img {
+  display: block;
+  max-width: 220px;   /* thumbnail size on the WHEN page */
+  width: 100%;
+  height: auto;
+}
