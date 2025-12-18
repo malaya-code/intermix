@@ -17,6 +17,8 @@ Version: 0.1
 
   background-color: #ff9bdf;
   color: #07114b;
+  display: flex;
+  justify-content: center;
 }
 
 footer {
@@ -306,3 +308,4 @@ header {
   width: 100%;
   height: auto;
 }
+
