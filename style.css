@@ -258,11 +258,12 @@ header {
   padding: 3rem 1.5rem;
 }
 
-.what-layout {
-  display: grid;
-  grid-template-columns: 1fr 1fr; /* two equal columns */
-  min-height: 100vh; /* or whatever height */
-  gap: 0; /* no gap between columns */
+.what-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 40px;
 }
 
 .what-content {
@@ -341,10 +342,12 @@ header {
   }
 
   /* WHAT page: stack columns */
-  .what-layout {
-    grid-template-columns: 1fr;
-    min-height: auto;
-  }
+.what-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 0;
+}
 
   .what-content {
     padding: 2rem 1.5rem;
@@ -355,16 +358,4 @@ header {
     padding: 2rem 1rem;
   }
 
-.what-title {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0;
-  padding: 40px;
 }
-   
-}
-
-
-
-
