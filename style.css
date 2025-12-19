@@ -265,15 +265,6 @@ header {
   gap: 0; /* no gap between columns */
 }
 
-.what-title {
-  background-color: white; /* your color block! */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0;
-  padding: 40px;
-}
-
 .what-content {
   padding: 40px;
 }

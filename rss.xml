@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Intermix</title>
+    <link>https://malaya-code.github.io/intermix/</link>
+    <description>Intermix — open media discussion sessions</description>
+    <language>en-us</language>
+
+    <item>
+      <title>What Is It Like to Be a Bat?</title>
+      <link>https://malaya-code.github.io/intermix/session01-bat.html</link>
+      <description>January 17 · 12:00–1:15 PM PST</description>
+      <guid>intermix-session-01</guid>
+    </item>
+
+    <item>
+      <title>What Is Mastodon?</title>
+      <link>https://malaya-code.github.io/intermix/session02-mastodon.html</link>
+      <description>February 21 · 12:00–1:15 PM PST</description>
+      <guid>intermix-session-02</guid>
+    </item>
+
+  </channel>
+</rss>
