@@ -319,6 +319,57 @@ header {
   height: auto;
 }
 
+/* =========================
+   MOBILE OVERRIDES
+   ========================= */
+
+@media (max-width: 768px) {
+
+  /* Global spacing */
+  main {
+    padding: 2rem 1rem;
+  }
+
+  /* Header / Nav */
+  .site-header {
+    height: auto;
+  }
+
+  .primary-nav {
+    padding: 1rem;
+  }
+
+  .site-header .primary-nav .nav-list {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 1rem;
+  }
+
+  .wp-inter-logo {
+    grid-column: 1 / -1;
+    justify-self: center;
+  }
+
+  /* WHAT page: stack columns */
+  .what-layout {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+
+  .what-title {
+    padding: 3rem 1.5rem;
+    text-align: center;
+  }
+
+  .what-content {
+    padding: 2rem 1.5rem;
+  }
+
+  /* CONNECT / text-heavy pages */
+  .connect-page {
+    padding: 2rem 1rem;
+  }
+
+}
 
 
 
