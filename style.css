@@ -260,18 +260,22 @@ header {
 
 .what-layout {
   display: grid;
-  grid-template-columns: 220px 1fr;
-  column-gap: 3rem;
-  align-items: center; /* vertical centering of WHAT? */
+  grid-template-columns: 1fr 1fr; /* two equal columns */
+  min-height: 100vh; /* or whatever height */
+  gap: 0; /* no gap between columns */
 }
 
 .what-title {
+  background-color: white; /* your color block! */
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin: 0;
+  padding: 40px;
 }
 
 .what-content {
-  max-width: 720px;
-  line-height: 1.6;
+  padding: 40px;
 }
 
 .what-content p {
