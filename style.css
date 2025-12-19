@@ -346,11 +346,6 @@ header {
     min-height: auto;
   }
 
-  .what-title {
-    padding: 3rem 1.5rem;
-    text-align: center;
-  }
-
   .what-content {
     padding: 2rem 1.5rem;
   }
@@ -360,7 +355,16 @@ header {
     padding: 2rem 1rem;
   }
 
+.what-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 40px;
 }
+   
+}
+
 
 
 
