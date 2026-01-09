@@ -341,9 +341,9 @@ header {
   /* WHAT page: stack columns */
 .what-layout {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: start;
+  grid-template-columns: 1fr 2fr;
   gap: 3rem;
+  align-items: center;
 }
 
   .what-content {
