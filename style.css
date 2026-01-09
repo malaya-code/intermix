@@ -89,12 +89,6 @@ h1, h2, h3 {
   padding: 3rem 1.5rem;
 }
 
-.what-content {
-  max-width: 720px;
-  margin-left: auto; /* pushes content right */
-  line-height: 1.6;
-}
-
 /* On multiple pages */
 .what-term {
   font-family: monospace;
@@ -259,16 +253,7 @@ header {
 }
 
 .what-title {
-  justify-self: start;
-  text-align: left;
-}
-
-.what-content {
-  padding: 40px;
-}
-
-.what-content p {
-  margin-bottom: 1.25rem;
+  flex: 0 0 auto;
 }
 
 /* =========================
@@ -340,15 +325,12 @@ header {
 
   /* WHAT page: stack columns */
 .what-layout {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
+  display: flex;
+  align-items: center;     /* vertical alignment */
   gap: 3rem;
-  align-items: center;
 }
 
-  .what-content {
-    padding: 2rem 1.5rem;
-  }
+
 
   /* CONNECT / text-heavy pages */
   .connect-page {
@@ -357,5 +339,10 @@ header {
 
 }
 
+.what-content {
+  max-width: 720px;
+  padding: 2rem 1.5rem;
+  line-height: 1.6;
+}
 
 
