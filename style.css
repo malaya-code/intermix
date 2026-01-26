@@ -260,15 +260,18 @@ header {
 
 .what-title {
   display: flex;
-  align-items: center;
   justify-content: center;
   margin: 0;
   padding: 40px;
 }
 
 .what-content {
+  flex: 1;
+  max-width: 720px;
   padding: 40px;
+  line-height: 1.6;
 }
+
 
 .what-content p {
   margin-bottom: 1.25rem;
@@ -357,6 +360,13 @@ header {
   .connect-page {
     padding: 2rem 1rem;
   }
+
+
+  .what-layout {
+  display: flex;
+  align-items: center;      /* vertical alignment between columns */
+  gap: 3rem;                /* editorial spacing */
+}
 
 }
 
