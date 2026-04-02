@@ -3,7 +3,7 @@ Theme Name: Intermix
 Theme URI: http://intermix-social.com
 Author: Malaya Wright
 Description: Open-media discussion site for Intermix.
-Version: 0.1
+Version: 0.5
 */
 
 
@@ -157,15 +157,8 @@ h1, h2, h3 {
 
 .site-header {
   width: 100%;
-  /* border-bottom: 1px solid rgba(0,0,0,0.15);  subtle bar */
   display: flex;
   height: 10rem;
-
-}
-
-header {
-    /* background-color: #ffbfe9; */
-
 }
 
 .primary-nav {
@@ -173,6 +166,83 @@ header {
   margin: 0 auto;
   padding: 1rem 1.5rem;
   display: flex;
+}
+
+/* =========================
+   NAV LIST (GRID, 6 ITEMS SAFE)
+   ========================= */
+
+.site-header .primary-nav .nav-list {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  justify-content: center;
+  align-items: center;
+  column-gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.site-header .primary-nav .nav-list > li {
+  display: flex;
+  align-items: center;
+}
+
+.site-header .primary-nav .wp-inter-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 120px;
+  max-height: 120px;
+}
+
+.site-header .primary-nav .wp-inter-logo img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.site-header .primary-nav .nav-list li::marker,
+.site-header .primary-nav .nav-list li::before,
+.site-header .primary-nav .nav-list li::after {
+  content: none;
+}
+
+.nav-list a {
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+}
+
+/* =========================
+   SITE BANNER
+   ========================= */
+
+.site-banner {
+  width: 100%;
+  background-color: #07114b;
+  color: #ffffff;
+  padding: 0.9rem 1.25rem;
+}
+
+.site-banner p {
+  max-width: 1100px;
+  margin: 0 auto;
+  font-size: 0.98rem;
+  line-height: 1.5;
+}
+
+.site-banner a {
+  color: #ffffff;
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+.site-banner a:hover,
+.site-banner a:focus {
+  color: #ffffff;
+  text-decoration-thickness: 2px;
 }
 /* =========================
    NAV LIST (GRID, 6 ITEMS SAFE)
@@ -320,12 +390,11 @@ header {
 
 @media (max-width: 768px) {
 
-  /* Global spacing */
+@media (max-width: 768px) {
   main {
     padding: 2rem 1rem;
   }
 
-  /* Header / Nav */
   .site-header {
     height: auto;
   }
@@ -337,37 +406,34 @@ header {
   .site-header .primary-nav .nav-list {
     grid-template-columns: 1fr 1fr;
     row-gap: 1rem;
+    column-gap: 1rem;
   }
 
-  .wp-inter-logo {
+  .site-header .primary-nav .wp-inter-logo {
     grid-column: 1 / -1;
     justify-self: center;
   }
 
-  /* WHAT page: stack columns */
-.what-layout {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  gap: 0;
-}
+  .site-banner {
+    padding: 0.9rem 1rem;
+  }
+
+  .site-banner p {
+    font-size: 0.95rem;
+  }
 
   .what-content {
     padding: 2rem 1.5rem;
   }
 
-  /* CONNECT / text-heavy pages */
   .connect-page {
     padding: 2rem 1rem;
   }
 
-
   .what-layout {
-  display: flex;
-  align-items: center;      /* vertical alignment between columns */
-  gap: 3rem;                /* editorial spacing */
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+  }
 }
-
-}
-
 
